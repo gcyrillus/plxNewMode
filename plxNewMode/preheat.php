@@ -1,6 +1,6 @@
 <?php	
 		$homeCloneModes=preg_replace('/\s+/', '', $homeCloneModes = $this->plxPlugins->aPlugins['plxNewMode']->getParam('cloneMode')=='' ? '0' : $this->plxPlugins->aPlugins['plxNewMode']->getParam('cloneMode'));
-		if(!empty($this->get) and $homeCloneModes !='0' and preg_match('#^(?:'.$homeCloneModes.'(?:\=))#', $this->get)) { $this->get =  ''; }
+		if(!empty($this->get) and $homeCloneModes !='0' and preg_match('#^('.$homeCloneModes.')=[\w]#', $this->get)) { $this->get =  ''; }
 		else {if(!empty($this->get) and !preg_match('#^(?:blog|article\d{1,4}/|static\d{1,3}/|categorie\d{1,3}/|archives/\d{4}(?:/\d{2})?|tag/\w|page\d|preview|telechargement|download)#', $this->get)) { $this->get =  'error'; }}
 
 		if(!$this->get AND $this->aConf['homestatic']!='' AND isset($this->aStats[$this->aConf['homestatic']]) AND $this->aStats[$this->aConf['homestatic']]['active']) {
