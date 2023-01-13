@@ -31,6 +31,7 @@
             echo self::BEGIN_CODE;
 ?>		
 		include(PLX_ROOT.'plugins/plxNewMode/preHeat.php');
+		return true;
 <?php
             echo self::END_CODE;						
         }		
