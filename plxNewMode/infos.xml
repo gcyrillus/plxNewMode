@@ -4,7 +4,7 @@
    <author>GC-nomade</author>
    <version>0.0.2</version>
    <date>20/06/2022</date>
-    <site>http://re7net.com</site>
+    <site>https://github.com/gcyrillus/plxNewMode/</site>
     <repository>https://github.com/gcyrillus</repository>
    <description> Ajout de "mode" non natif à pluxml pour rediriger vers la page d'accueil au lieu d'une page d'erreur. ||| Exemple de lien : index.php?visite=site-de-machin ce lien exterieur ne redirigira pas vers la page d'accueil mais la page d'erreur car elle ne correspondant pas au mode article,categorie,tag,static  </description>
    <scope>site</scope>
